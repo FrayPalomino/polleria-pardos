@@ -1,18 +1,19 @@
 {
     "version": 2,
+    "framework": null,
     "builds": [
       {
-        "src": "dist/spa/**",
-        "use": "@vercel/static"
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist/spa"
+        }
       }
     ],
     "routes": [
       {
-        "handle": "filesystem"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/dist/spa/index.html"
+        "dest": "/index.html"
       }
     ]
   }

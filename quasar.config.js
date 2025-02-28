@@ -46,7 +46,7 @@ export default defineConfig((ctx) => {
         browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
         node: 'node20'
       },
-
+      distDir: 'dist/spa',
       vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
